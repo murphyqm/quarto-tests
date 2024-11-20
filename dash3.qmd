@@ -1,0 +1,81 @@
+--- 
+title: "Development Indicators by Continent"
+author: "Gapminder Analytics Group"
+format:
+    dashboard:
+        theme: 
+        - simplex
+        - new_custom.scss
+--- 
+
+```{python}
+import plotly.express as px
+df = px.data.gapminder()
+```
+
+## Row {height=60%}
+
+```{python}
+#| title: GDP and Life Expectancy 
+px.scatter(  
+  df, x="gdpPercap", y="lifeExp", 
+  animation_frame="year", animation_group="country", 
+  size="pop", color="continent", hover_name="country",
+  facet_col="continent", log_x=True, size_max=45, 
+  range_x=[100,100000], range_y=[25,90] 
+)  
+```
+
+## Row {height=40%}
+
+```{python}
+#| title: Population
+px.area(
+  df, x="year", y="pop", 
+  color="continent", line_group="country"
+)
+```
+
+```{python}
+#| title: Life Expectancy
+px.line(
+  df, x="year", y="lifeExp", 
+  color="continent", line_group="country"
+)
+```
+
+::: {.card title="Life Expectancy" padding="3px" background="dark"}
+
+This is the content.
+
+:::
+
+
+## Row {height=30%}
+
+::: {.card}
+Gapminder combines data from multiple sources into
+unique coherent time-series that can’t be found
+elsewhere. Learn more about the Gampminder dataset at
+<https://www.gapminder.org/data/>.
+:::
+
+<div class="card bslib-card html-fill-container bg-danger" data-title="MyTitle" data-require-bs-caller="card()">
+<div class="card-header"><div class="card-title">MyTitle</div></div>
+<div class="card-body html-fill-item html-fill-container bg-danger">
+<p>Gapminder combines data from multiple sources into unique coherent time-series that can’t be found elsewhere.</p>
+</div>
+</div>
+
+
+::: {.card title="MyTitle" expandable="false"}
+Gapminder combines data from multiple sources into
+unique coherent time-series that can’t be found elsewhere.
+:::
+
+<div class="card bslib-card html-fill-container bg-danger" data-title="MyTitle" data-require-bs-caller="card()">
+<div class="card-header"><div class="card-title">MyTitle</div></div>
+<div class="card-body">
+<p>Gapminder combines data from multiple sources into unique coherent time-series that can’t be found elsewhere.</p>
+</div>
+</div>

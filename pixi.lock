@@ -47,6 +47,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/ipython_genutils-0.2.0-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/ipywidgets-8.1.5-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/isoduration-20.11.0-pyhd8ed1ab_0.tar.bz2
+      - conda: https://conda.anaconda.org/conda-forge/noarch/itables-2.2.3-pyh5bfe37b_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/jedi-0.19.2-pyhff2d567_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/jinja2-3.1.4-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/json5-0.9.28-pyhff2d567_0.conda
@@ -881,6 +882,24 @@ packages:
   license_family: MIT
   size: 17189
   timestamp: 1638811664194
+- kind: conda
+  name: itables
+  version: 2.2.3
+  build: pyh5bfe37b_0
+  subdir: noarch
+  noarch: python
+  url: https://conda.anaconda.org/conda-forge/noarch/itables-2.2.3-pyh5bfe37b_0.conda
+  sha256: 0919169c1f058fb30db92cb8768df5c6302aa48f0c172d313a1f5ec39c6332e0
+  md5: 2efe20eeb9bd6304062cd682d42e71d1
+  depends:
+  - ipython
+  - numpy
+  - pandas
+  - python >=3.7
+  license: MIT
+  license_family: MIT
+  size: 1010132
+  timestamp: 1730605068121
 - kind: conda
   name: jedi
   version: 0.19.2

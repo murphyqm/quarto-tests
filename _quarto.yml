@@ -6,14 +6,21 @@ website:
   title: "Website title"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
       - about.qmd
-      - dash2.ipynb
+      - href: dash_1.ipynb
+        text: Dash 1
+      - href: dash2.ipynb
+        text: Dash 2
+      - href: dash3.qmd
+        text: Dash 3
+      - href: dash4.qmd
+        text: Dash 4
 
 format:
   html:
-    theme: cosmo
+    theme: 
+      - litera
+      - custom.scss
     toc: true
 
 

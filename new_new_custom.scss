@@ -1,0 +1,49 @@
+/*-- scss:defaults --*/
+
+// scss-docs-start theme-color-variables
+$primary:       #114b6d !default;
+$secondary:     #FFF !default;
+$success:       #469408 !default;
+$info:          #029ACF !default;
+$warning:       #D9831F !default;
+$danger:        #9B479F !default;
+$light:         #50b1e9 !default;
+$dark:          #003554 !default;
+// scss-docs-end theme-color-variables
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+) !default;
+
+// colors
+
+$navbar-bg: $secondary;
+$navbar-fg: $primary;
+
+$link-color: lighten($info, 40%);
+$hover-color: $info;
+
+/*-- scss:rules --*/
+.card-header {
+  background-color: lighten($danger, 40%);
+}
+
+.nav-item > a:hover {
+  color: $info;
+}
+
+.nav-link {
+  color: $danger;
+}
+
+.tabset .nav-link {
+  color: $danger;
+}

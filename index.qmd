@@ -24,3 +24,9 @@ Here is more text.
 
 - [ ] Task 1
 - [x] Task 2
+
+
+
+<!-- Coolors Palette Widget -->
+<script src="https://coolors.co/palette-widget/widget.js"></script>
+<script data-id="047752929704321745">new CoolorsPaletteWidget("047752929704321745", ["003554","d9831f","469408","029acf","9b479f"]); </script>

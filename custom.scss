@@ -1,0 +1,24 @@
+/*-- scss:defaults --*/
+// scss-docs-start theme-color-variables
+$primary:       #987284 !default;
+$secondary:     #FFF !default;
+$success:       #469408 !default;
+$info:          #029ACF !default;
+$warning:       #D9831F !default;
+$danger:        #9B479F !default;
+$light:         #C3ACB7 !default;
+$dark:          #987284 !default;
+// scss-docs-end theme-color-variables
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+) !default;
+// scss-docs-end theme-colors-map
