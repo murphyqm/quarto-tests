@@ -1,0 +1,26 @@
+# Header 1
+
+Here is some text.
+
+* unordered list
+    + sub-item 1
+    + sub-item 2
+        - sub-sub-item 1
+
+## Header two
+
+Here is more text.
+
+
+| fruit  | price  |
+|--------|--------|
+| apple  | 2.05   |
+| pear   | 1.37   |
+| orange | 3.09   |
+
+: Fruit prices {.striped .hover}
+
+### A third level header
+
+- [ ] Task 1
+- [x] Task 2
